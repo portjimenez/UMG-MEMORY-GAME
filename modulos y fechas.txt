@@ -1,0 +1,12 @@
+Formularios:
+	a) bienvenida = Bryan
+	b) Menu
+		4 submodulos = Fernando y David
+	c) juego
+		logica del juego como tal = Manases, 		Luis y Melanie
+
+Dias para entregar (sin falta)
+a) dia martes por la noche.
+b y sus submodulos) dia jueves al medio dia.
+c) dia domingo por la noche (avances el dia sabado para la clase de programacion)
+

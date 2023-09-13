@@ -1,0 +1,9 @@
+Mecanicas del juego
+
+1) El formulario deberá mostrar en algún lugar del formulario, la fotografía y nickname del jugador.
+
+2) modalidad del juego de memoria (parrafo 1 y 3) = Manases
+
+3) Taimer (parrafo 2) = Luis
+
+4) bitacora (parrafo 4) = Melanie

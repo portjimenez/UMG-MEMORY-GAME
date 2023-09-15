@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 public class FrmLogin extends javax.swing.JFrame {
 private static Scanner sc;
 private static int intentos;
-private String user, pw;
+public String user, pw;
    int con =0;
      String [] h;
    boolean log = false;
@@ -193,6 +193,7 @@ while((linea=br.readLine())!=null){
   if(usuario.equals(h[0])&& pws.equals(h[2])){
       log = true;
             FrmJuego jue=  new  FrmJuego();
+            jue.Jugador = usuario;
             this.dispose();
       
     

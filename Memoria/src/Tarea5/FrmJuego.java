@@ -28,6 +28,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -71,9 +73,42 @@ public class FrmJuego {
      int acx;
      int acy;
      int nn;
-     
+     public int NumMouseClick = 0;
+     public String resultado = "Exito";
      
 String []Prueba = {"1","2","3","4","5","6","7","8"};
+     
+     
+public static void writeBitacora (String usuario, String resultado, int intentos , int minutos, int segundos ) {
+        /*
+        
+        Abrir archivo lectura y escritura (append) archivo llamado bitácora.txt
+Leer la ultima línea y almacenar en una variable el correlativo ultimo registrado y sumarle 1
+Concatenar las variables
+Agregar una línea escribir el valor de la variables concatenadas.
+        */
+  
+        try {
+      Path Pathusuario = Paths.get("./src/base/bitacora.txt");
+     String cadena ="";
+     cadena += usuario + ", ";
+     cadena += resultado + ", ";
+     cadena += intentos + ", ";
+     cadena += minutos + ", ";
+     cadena += segundos + "\n";
+     // Agregar una línea de separación
+        
+            
+    Files.write(Pathusuario,cadena.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND); 
+       }
+         catch(Exception e)
+        {
+
+            JOptionPane.showMessageDialog(null, "ERROR: "+ e.getMessage());
+        }
+        
+    }
+     
      
      
      
@@ -177,7 +212,9 @@ String []Prueba = {"1","2","3","4","5","6","7","8"};
                 if(min==3){
                      tiempo.stop();
                                JOptionPane.showMessageDialog(null,"Fin ", "El Tiempo a terminado ", JOptionPane.INFORMATION_MESSAGE);
-                              FrmMenu menu = new FrmMenu();
+                              resultado = "Fracaso";
+                              writeBitacora (Jugador, resultado, NumMouseClick , min, seg );
+                               FrmMenu menu = new FrmMenu();
         menu.setVisible(true);
         
                 
@@ -230,7 +267,7 @@ String []Prueba = {"1","2","3","4","5","6","7","8"};
 
                    public void mousePressed(MouseEvent e){
                  
-                       
+                       NumMouseClick++;
                         for (int k = 0; k < a; k++) {
                             for (int l = 0; l < b; l++) {
                                 if(e.getSource()==matriz[k][l]){

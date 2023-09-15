@@ -8,4 +8,5 @@ Ernesto, erne123@gmail.com, 123456, 123456, C:\Users\D A V I D\Documents\erne123
 Juan, Juanquinto1@gmail.com, 123456, 123456, C:\Users\D A V I D\Escritorio\Juanquinto1@gmail.com.jpg
 Josue, josue@gmail.com, 123456, 123456, C:\Users\D A V I D\Documents\josue@gmail.com.jpg
 Tururu, tururu@gmail.com, 123456, 123456, C:\Users\D A V I D\Documents\tururu@gmail.com.jpg
-Mananses, mananases@gmail.com, 123456, 123456, C:\Users\D A V I D\Documents\mananases@gmail.com.jpg
+Manases, mananases@gmail.com, 123456, 123456, C:\Users\D A V I D\Documents\mananases@gmail.com.jpg
+Mel, coronado.melanie@gmail.com, 3012, 3012, C:\Users\Melany\Documents\coronado.melanie@gmail.com.jpg
